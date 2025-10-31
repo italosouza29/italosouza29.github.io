@@ -1,0 +1,453 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+   
+    header {
+      background-color: #1f1f1f;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #f5f5f5;
+      text-transform: uppercase;
+    }
+
+    
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 1rem;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 5px;
+    }
+
+    .menu a:hover {
+      color: #f0a500;
+      border-bottom: 2px solid #f0a500;
+    }
+
+    
+    .icones {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icone {
+      color: #ccc;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .icone:hover {
+      color: #f0a500;
+    }
+
+    
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .icones {
+        margin-top: 10px;
+      }
+    }
+
+    
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .imagens {
+      width: 50%;
+      margin-top: 20px;
+      display: flex;
+
+    }
+    .imagensprod {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 5px 8px;
+    padding: 20px 10px;
+  }
+      
+    .texto {
+    margin-top: 20px;
+    gap: 800px;
+    display: flex;
+    
+    
+    }
+
+    .sobrenos {
+    margin-top: 320px; 
+    text-align: center;
+    border: 3px solid #000000; 
+    }
+
+    .textosobre {
+        text-align:justify;
+    }
+
+    .texto-sobre {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      bottom: 100px;       /* distância da parte inferior */
+      left: 70px;         /* distância da esquerda */
+      background-color: rgba(0, 0, 0, 0.7); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 150px 185px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 90px;    /* tamanho do texto */
+    }
+    .texto-sapato {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 530px;      /* distância da parte inferior */
+      left: 400px;         /* distância da esquerda */
+      background-color: rgba(0, 0, 0, 0.7); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 30px;    /* tamanho do texto */
+    }
+    .texto-sapato2 {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 530px;      /* distância da parte inferior */
+      left: 1400px;         /* distância da esquerda */
+      background-color: rgba(0, 0, 0, 0.7); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 30px;    /* tamanho do texto */
+    }
+     .texto-Botinas {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 300px;      /* distância da parte inferior */
+      left: 250px;         /* distância da esquerda */
+      background-color: rgba(0, 0, 0, 0.7); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 30px;    /* tamanho do texto */
+    }
+    .texto-Chinelos {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 300px;      /* distância da parte inferior */
+      left: 850px;         /* distância da esquerda */
+      background-color: rgba(0, 0, 0, 0.7); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 30px;    /* tamanho do texto */
+    }
+    .texto-Sandalhas {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 300px;      /* distância da parte inferior */
+      left: 1500px;         /* distância da esquerda */
+      background-color: rgba(0, 0, 0, 0.7); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 30px;    /* tamanho do texto */
+    }
+    
+ 
+/*rodape*/
+footer {
+  display: flex; 
+  background-color: #000000;
+  color: #000000;
+  padding: 40px 680px 20px;
+  font-family: "Poppins", sans-serif;
+  margin-top: 600px;
+  bottom: 0;
+
+}
+
+/* ======== CONTAINER ======== */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 20px;
+  
+}
+
+
+.footer-container div {
+  flex: 1 1 250px;
+}
+
+.footer-sobre h3 {
+  font-size: 1.5rem;
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+
+.footer-sobre p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-links h4,
+.footer-contato h4 {
+  color: #f0a500;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ccc;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f0a500;
+}
+
+
+.footer-contato p {
+  margin: 5px 0;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.redes-sociais a {
+  color: #ccc;
+  font-size: 1.3rem;
+  margin-right: 10px;
+  transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+  color: #f0a500;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container div {
+    margin-bottom: 20px;
+  }
+}
+
+
+/* ======== Calçados ======== */
+
+body {
+   background: linear-gradient(to bottom, #d9d9d9, #a6a6a6, #808080); 
+  /* degrade de cinza claro para cinza escuro */
+  min-height: 100vh; /* garante que ocupe toda a altura da tela */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.Sapatos {
+  width: 40%;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 80%;
+  padding: 30px 70px;
+  background-color: rgb(0, 0, 0);
+  padding: 5px 8px; /* espaçamento interno */
+  border-radius: 8px;
+}
+
+.texta {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 10px;      /* distância da parte inferior */
+      left: 770px;         /* distância da esquerda */
+      background-color: rgb(0, 0, 0); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 20px;    /* tamanho do texto */
+    }
+    
+    .comprar-sap {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 50px;      /* distância da parte inferior */
+      left: 770px;         /* distância da esquerda */
+      background-color: rgb(0, 0, 0); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 20px;    /* tamanho do texto */
+    }
+    .Psapatos {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 100px;      /* distância da parte inferior */
+      left: 770px;         /* distância da esquerda */
+      background-color: rgb(0, 0, 0); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 15px 28px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 20px;    /* tamanho do texto */
+    }
+
+   
+.Sandalhas {
+ 
+  width: 40%;
+  margin-top: 20px;
+  display: flex;
+  border-radius: 80%;
+  padding: 30px 70px;
+  background-color: rgb(0, 0, 0);
+  padding: 5px 8px; /* espaçamento interno */
+  border-radius: 8px;
+  margin-bottom: 200px;      
+    
+}
+
+.texta2 {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 30px;      /* distância da parte inferior */
+      left: 770px;         /* distância da esquerda */
+      background-color: rgb(0, 0, 0); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 20px;    /* tamanho do texto */
+    }
+
+    .comprar-dalha {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 80px;      /* distância da parte inferior */
+      left: 770px;         /* distância da esquerda */
+      background-color: rgb(0, 0, 0); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 20px;    /* tamanho do texto */
+    }
+
+    .Psandalha {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 140px;      /* distância da parte inferior */
+      left: 770px;         /* distância da esquerda */
+      background-color: rgb(0, 0, 0); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 5px 8px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 20px;    /* tamanho do texto */
+    }
+
+    .TituloS{
+      text-align: center;
+      margin-top: 70px;
+    }
+    .oSOBRE {
+      position: absolute; /* posiciona o texto sobre a imagem */
+      margin-top: 70px;      /* distância da parte inferior */
+      left: 0px;         /* distância da esquerda */
+      background-color: rgb(0, 0, 0); /* fundo preto semi-transparente */
+      color: white;       /* cor do texto */
+      padding: 15px 38px; /* espaçamento interno */
+      border-radius: 8px; /* cantos arredondados */
+      font-size: 20px;    /* tamanho do texto */
+    }
+
+
+    /* ===== ANIMAÇÕES GERAIS ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ===== CLASSES DE ANIMAÇÃO ===== */
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.slide-up {
+  animation: slideUp 1.2s ease-out forwards;
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease-in-out forwards;
+}
+
+/* ===== EFEITOS AO PASSAR O MOUSE ===== */
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+a:hover {
+  color: #ff6600;
+  transition: color 0.4s ease;
+}
+
+/* ===== CABEÇALHO E RODAPÉ ===== */
+header {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+footer {
+  animation: fadeIn 1.5s ease-in-out;
+}
