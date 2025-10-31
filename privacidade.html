@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Shoes</title>
+
+  <!-- Importa os ícones do Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* ====== CABEÇALHO ====== */
+    header {
+      background-color: #1f1f1f;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #f5f5f5;
+      text-transform: uppercase;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 1rem;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 5px;
+    }
+
+    .menu a:hover {
+      color: #f0a500;
+      border-bottom: 2px solid #f0a500;
+    }
+
+    /* ====== ÍCONES ====== */
+    .icones {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icone {
+      color: #ccc;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .icone:hover {
+      color: #f0a500;
+    }
+
+    /* ====== SEÇÃO DE POLÍTICA ====== */
+    section.politica {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section.politica h1 {
+      text-align: center;
+      color: #1f1f1f;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    section.politica p {
+      color: #333;
+      line-height: 1.7;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    /* ====== RESPONSIVIDADE ====== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .icones {
+        margin-top: 10px;
+      }
+
+      section.politica {
+        padding: 20px;
+        margin: 30px 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><div class="logo" >Urban Shoes</div></a>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="novidadesreal.html">Novidades</a></li>
+        <li ><a href="calcados.html">Calçados</a></li>
+        <li><a href="Sobre nos.html">Sobre nós </a></li>
+        <li><a href="contatos.html">Contato </a></li>
+        <li><a href="privacidade.html">Politicas de privacidade</a></li>
+      </ul>
+    </nav>
+
+    <div class="icones">
+      <a href="#" class="icone"><i class="fas fa-search"></i></a>
+      <a href="#" class="icone"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#" class="icone"><i class="fas fa-user"></i></a>
+    </div>
+  </header>
+
+  <!-- ====== SEÇÃO DE POLÍTICA DE PRIVACIDADE ====== -->
+  <section id="politica" class="politica">
+    <h1>Política de Privacidade</h1>
+    <p>A sua privacidade é importante para nós. É política do Urban Shoes respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Urban Shoes, e outros sites que possuímos e operamos.</p>
+
+    <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.</p>
+
+    <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
+
+    <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.</p>
+
+    <p>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas respectivas políticas de privacidade.</p>
+
+    <p>Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos fornecer alguns dos serviços desejados.</p>
+
+    <p>O uso continuado de nosso site será considerado como aceitação de nossas práticas em torno de privacidade e informações pessoais. Se você tiver alguma dúvida sobre como lidamos com dados do usuário e informações pessoais, entre em contato conosco.</p>
+  </section>
+</body>
+</html>

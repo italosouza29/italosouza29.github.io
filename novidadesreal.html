@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Shoes - Novidades</title>
+
+  <!-- Fontes e ícones -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #ffffff, #f1f1f1);
+      color: #333;
+    }
+
+    /* Cabeçalho */
+    header {
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 60px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #f5f5f5;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .logo:hover {
+      color: #f0a500;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 1rem;
+      position: relative;
+      transition: color 0.3s;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #f0a500;
+      transition: width 0.3s;
+    }
+
+    nav a:hover {
+      color: #f0a500;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    .icones {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icone {
+      color: #ccc;
+      font-size: 1.3rem;
+      transition: color 0.3s;
+    }
+
+    .icone:hover {
+      color: #f0a500;
+    }
+
+    /* Seções */
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin: 70px auto;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      padding: 0 20px;
+      transition: transform 0.4s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+    }
+
+    .container img {
+      width: 420px;
+      border-radius: 18px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+      transition: transform 0.4s;
+    }
+
+    .container img:hover {
+      transform: scale(1.03);
+    }
+
+    .texto {
+      padding: 30px;
+      border-radius: 18px;
+      max-width: 520px;
+      line-height: 1.7;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      background: #fff;
+      animation: fadeIn 1.2s ease forwards;
+    }
+
+    .texto1 { border-left: 6px solid #76c7f0; }
+    .texto2 { border-left: 6px solid #5fd8c2; }
+    .texto3 { border-left: 6px solid #f4b441; }
+    .texto4 { border-left: 6px solid #b0b0b0; }
+
+    strong {
+      color: #111;
+    }
+
+    em {
+      color: #f0a500;
+      font-style: normal;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Responsividade */
+    @media (max-width: 900px) {
+      header {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+      }
+
+      .container {
+        flex-direction: column;
+        gap: 25px;
+        margin: 40px 20px;
+      }
+
+      .container img {
+        width: 100%;
+        max-width: 350px;
+      }
+
+      .texto {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><div class="logo" >Urban Shoes</div></a>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="novidadesreal.html">Novidades</a></li>
+        <li ><a href="calcados.html">Calçados</a></li>
+        <li><a href="Sobre nos.html">Sobre nós </a></li>
+        <li><a href="contatos.html">Contato </a></li>
+        <li><a href="privacidade.html">Politicas de privacidade</a></li>
+      </ul>
+    </nav>
+
+    <div class="icones">
+      <a href="#" class="icone"><i class="fas fa-search"></i></a>
+      <a href="#" class="icone"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#" class="icone"><i class="fas fa-user"></i></a>
+    </div>
+  </header>
+
+  <!-- Produtos -->
+  <section class="container">
+    <img src="chinelo azul (1).jpg" alt="Chinelo Urban Azul Praia">
+    <div class="texto texto1">
+      <p>O <strong><em>Urban Azul Praia</em></strong> é o novo lançamento da Urban Shoes, pensado para quem busca conforto e estilo no dia a dia. Com design moderno e cores vibrantes, ele é ideal para momentos de lazer na praia, piscina ou na cidade.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <img src="sapato verde agua (1).jpg" alt="Tênis Verde Água">
+    <div class="texto texto2">
+      <p>O <strong><em>Urban Verde Mar</em></strong> combina leveza, conforto e versatilidade. Seu tom verde água moderno e design esportivo garantem frescor e elegância em qualquer ocasião, seja no passeio ou no trabalho.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <img src="chineloamarelo (1).jpg" alt="Chinelo Amarelo">
+    <div class="texto texto3">
+      <p>O <strong><em>Solar Vibe</em></strong> é a energia que o seu estilo precisava! Com cor vibrante e conforto absoluto, este chinelo transforma qualquer look urbano em uma explosão de atitude e personalidade.</p>
+    </div>
+  </section>
+
+  <section class="container">
+    <img src="bota (1).png" alt="Bota Preta">
+    <div class="texto texto4">
+      <p>A <strong><em>Urban Night</em></strong> é a bota ideal para quem busca elegância e presença. Com design sofisticado e acabamento premium, ela garante conforto e resistência para quem vive o melhor da moda urbana.</p>
+    </div>
+  </section>
+</body>
+</html>

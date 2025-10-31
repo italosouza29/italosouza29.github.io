@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Shoes</title>
+
+  <!-- Ícones do Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    /* ====== AJUSTE GERAL PARA FIXAR O RODAPÉ ====== */
+    html, body {
+      height: 100%;              /* altura total da tela */
+      display: flex;
+      flex-direction: column;    /* empilha os elementos verticalmente */
+    }
+
+    main {
+      flex: 1;                   /* ocupa o espaço restante, empurrando o rodapé pra baixo */
+    }
+
+    /* ====== CABEÇALHO ====== */
+    header {
+      background-color: #1f1f1f;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 60px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #f5f5f5;
+      text-transform: uppercase;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 1rem;
+      transition: color 0.3s, border-bottom 0.3s;
+      padding-bottom: 5px;
+    }
+
+    .menu a:hover {
+      color: #f0a500;
+      border-bottom: 2px solid #f0a500;
+    }
+
+    /* ====== ÍCONES ====== */
+    .icones {
+      display: flex;
+      gap: 20px;
+    }
+
+    .icone {
+      color: #ccc;
+      font-size: 1.2rem;
+      transition: color 0.3s;
+    }
+
+    .icone:hover {
+      color: #f0a500;
+    }
+
+    /* ====== SEÇÃO DE CONTATO ====== */
+    #contato {
+      background-color: #f5f5f5;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    #contato h1 {
+      font-size: 2rem;
+      color: #1f1f1f;
+      margin-bottom: 20px;
+    }
+
+    #contato p {
+      font-size: 1.1rem;
+      color: #333;
+      margin: 8px 0;
+    }
+
+    #contato i {
+      color: #f0a500;
+      margin-right: 8px;
+    }
+
+    /* ====== RODAPÉ ====== */
+    footer {
+      background-color: #1f1f1f;
+      color: #ccc;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      margin-top: auto;  /* empurra o rodapé para o fim da tela */
+    }
+
+    /* ====== RESPONSIVIDADE ====== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 20px;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 10px;
+      }
+
+      .icones {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ====== CABEÇALHO ====== -->
+  <header>
+   <a href="index.html"><div class="logo" >Urban Shoes</div></a>
+
+    <nav>
+      <ul class="menu">
+         <li><a href="novidadesreal.html">Novidades</a></li>
+        <li ><a href="calcados.html">Calçados</a></li>
+        <li><a href="Sobre nos.html">Sobre nós </a></li>
+        <li><a href="contatos.html">Contato </a></li>
+        <li><a href="privacidade.html">Politicas de privacidade</a></li>
+      </ul>
+    </nav>
+
+    <div class="icones">
+      <a href="#" class="icone"><i class="fas fa-search"></i></a>
+      <a href="#" class="icone"><i class="fas fa-shopping-cart"></i></a>
+      <a href="#" class="icone"><i class="fas fa-user"></i></a>
+    </div>
+  </header>
+
+  <!-- ====== CONTEÚDO PRINCIPAL ====== -->
+  <main>
+    <!-- ====== SEÇÃO DE CONTATOS ====== -->
+    <section id="contato">
+      <h1>Entre em Contato</h1>
+      <p><i class="fas fa-map-marker-alt"></i> Rua das Palmeiras, 250 – São Paulo, SP</p>
+      <p><i class="fas fa-phone-alt"></i> (11) 98888-7777</p>
+      <p><i class="fas fa-envelope"></i> contato@urbanshoes.com.br</p>
+      <p><i class="fas fa-clock"></i> Segunda a sábado, das 9h às 18h</p>
+    </section>
+  </main>
+
+  <!-- ====== RODAPÉ ====== -->
+  <footer>
+    &copy; 2025 Urban Shoes. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
